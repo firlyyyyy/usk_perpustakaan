@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             padding: 12px;
             border-radius: 15px;
             border-style: none;
-            background-color: #A5B68D;
+            background-color: chocolate;
             color: white;
             font-weight: bold;
             font-size: large;
@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         .container {
             display: block;
-            background-color: #C1CFA1;
+            background-color: saddlebrown;
             padding: 20px;
             max-width: 600px;
             margin: 180px auto 0;
@@ -49,12 +49,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             color: white;
             font-family: Arial, sans-serif;
         }
+
+        body {
+            background-image: url(img/image.png);
+        }
     </style>
 </head>
 
 <body>
 
-    <h1 style="font-family: Arial, Helvetica, sans-serif;">Perpustakaan</h1>
+    <h1 style="font-family: Arial, Helvetica, sans-serif; color: white">Perpustakaan</h1>
 
     <div class="container">
         <form action="" method="post" style="place-items: center; padding-top: 20px;">

@@ -46,9 +46,14 @@ if ($id_buku) {
             color: #555;
         }
 
+        .form-group {
+            margin-bottom: 15px;
+        }
+
         .button {
-            display: inline-block;
-            padding: 10px 20px;
+            display: block;
+            width: 100%;
+            padding: 10px;
             font-size: 16px;
             color: white;
             background-color: #007bff;
@@ -90,6 +95,12 @@ if ($id_buku) {
             <form action="proses-peminjaman.php" method="post">
                 <input type="hidden" name="id_pengguna" value="<?= htmlspecialchars($_SESSION['id']) ?>">
                 <input type="hidden" name="id_buku" value="<?= htmlspecialchars($book['id_buku']) ?>">
+
+                <div class="form-group">
+                    <label for="tanggal_pengembalian"><strong>Tanggal Pengembalian:</strong></label>
+                    <input type="date" id="tanggal_pengembalian" name="tanggal_pengembalian" required>
+                </div>
+
                 <button type="submit" class="button">Pinjam</button>
             </form>
         <?php else: ?>
